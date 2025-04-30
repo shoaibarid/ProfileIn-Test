@@ -105,7 +105,7 @@ const SignUp = () => {
     } else {
       setErrors({});
       console.log('Form Data Submitted:', formData);
-      axios.post('http://localhost/Profilein/signup.php', formData).then(response => {
+      axios.post('http://profilein.infy.uk/signup.php', formData).then(response => {
             
             if (response.data.success) {
               console.log(response.data);
