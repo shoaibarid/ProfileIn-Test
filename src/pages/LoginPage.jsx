@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post('http://localhost/Profilein/login.php', credentials)
+      .post('https://profilein.infy.uk/login.php', credentials)
       .then((response) => {
         if (response.data.success) {
           setIsLoggedIn(true);
